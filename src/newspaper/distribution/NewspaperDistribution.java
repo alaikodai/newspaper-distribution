@@ -17,6 +17,7 @@ public class NewspaperDistribution {
     public static void main(String[] args) {
         // TODO code application logic here
         //boop boop be doop
+        System.out.println("Hello World!");
     }
     
 }
