@@ -12,7 +12,7 @@ import java.io.IOException;
 public class FileData {
 
     public static void main(String[] args) throws IOException {
-        String file_name = "/Users/areeyatipyasothi/Desktop/helo.rtf";
+        String file_name = "/Users/areeyatipyasothi/Desktop/hello2.rtf";
         try {
             ReadFile file = new ReadFile(file_name);
             String[] aryLines = file.OpenFile();
@@ -23,6 +23,8 @@ public class FileData {
         } catch (IOException e) {
             System.out.println("Wat file lol");
         }
+        WriteFile data = new WriteFile(file_name);
+        data.writeToFile("Something cool!");
+        System.out.println("Text File Written To");
     }
-
 }
